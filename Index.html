@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eco-Pantry • Earth Edition</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="eco.css">
+</head>
+<body>
+
+    
+    <div class="leaf" style="left:10%; animation-duration: 22s; animation-delay: 0s;">🌱</div>
+    <div class="leaf" style="left:25%; animation-duration: 28s; animation-delay: 3s;">🍃</div>
+    <div class="leaf" style="left:45%; animation-duration: 19s; animation-delay: 8s;">🌿</div>
+    <div class="leaf" style="left:70%; animation-duration: 25s; animation-delay: 12s;">🌍</div>
+    <div class="leaf" style="left:85%; animation-duration: 30s; animation-delay: 5s;">🌱</div>
+
+    <header>
+        <div class="header-content">
+            <h1>Eco-Pantry</h1>
+            <p style="font-size:1.4rem; max-width:680px; margin:0 auto; opacity:0.95;">
+               Waste reduction • Real-time recipe intelligence
+            </p>
+        </div>
+    </header>
+
+    <div class="container">
+        
+        <div class="glass-card">
+            <h2><i class="fas fa-leaf"></i> Your Pantry</h2>
+            
+            <div class="input-group">
+                <input type="text" id="item-input" placeholder="Add ingredient (e.g. tofu, quinoa)">
+                <button class="btn-primary" id="add-btn"><i class="fas fa-plus"></i></button>
+            </div>
+
+            <div class="tags-container" id="tags-container"></div>
+
+            <div class="suggestion-pills" id="suggestions"></div>
+
+            <button class="btn-primary" id="search-btn" style="width:100%; margin-top:2rem; padding:1.4rem; font-size:1.2rem;">
+                <i class="fas fa-wand-magic-sparkles"></i> Generate Sustainable Recipes
+            </button>
+
+            <button id="reset-all-btn" style="width:100%; margin-top:12px; background:#f8fafc; color:#64748b; border:1px solid #e2e8f0; padding:14px; border-radius:18px;">
+                <i class="fas fa-rotate"></i> Reset All Data
+            </button>
+        </div>
+
+        
+        <div>
+            <div class="glass-card">
+                <h2><i class="fas fa-utensils"></i> Recipe Intelligence</h2>
+                <div id="results-area" class="results-grid">
+                   
+                </div>
+            </div>
+
+            <div class="dashboard">
+                <div class="metric-card">
+                    <div style="font-size:3rem;margin-bottom:8px;">♻️</div>
+                    <div style="color:#a5f3fc; font-weight:600;">WASTE DIVERTED</div>
+                    <div class="metric-value" id="mass-ui">0.0</div>
+                    <div style="font-size:1.1rem;opacity:0.9;">lbs</div>
+                </div>
+                <div class="metric-card">
+                    <div style="font-size:3rem;margin-bottom:8px;">🌍</div>
+                    <div style="color:#a5f3fc; font-weight:600;">CO₂ SAVED</div>
+                    <div class="metric-value" id="co2-ui">0.0</div>
+                    <div style="font-size:1.1rem;opacity:0.9;">lbs</div>
+                </div>
+                <div class="metric-card">
+                    <div style="font-size:3rem;margin-bottom:8px;">🌳</div>
+                    <div style="color:#a5f3fc; font-weight:600;">TREES EQUIVALENT</div>
+                    <div class="metric-value" id="trees-ui">0</div>
+                    <div style="font-size:1.1rem;opacity:0.9;">planted</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  
+    <div class="modal-overlay" id="recipe-modal">
+        <div class="modal-window">
+            <div class="modal-header">
+                <div id="modal-title" style="font-size:1.9rem; font-weight:700; line-height:1.2;"></div>
+                <span class="modal-close" id="close-modal">✕</span>
+            </div>
+            <div class="modal-body" id="modal-render-target"></div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p><strong>Eco-Pantry © <span id="year">2026</span> • Mohammed Kamil</strong></p>
+        <div class="connect-buttons">
+            <a href="https://linkedin.com/in/mohammed-kamil-mohammed" onclick="alert('LinkedIn: Connect with Mohammed Kamil (Science Fair 2026)')" class="connect-btn">
+                <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+            <a href="mailto:mohammedkamilmohammed16@gmail.com?subject=Collaboration%20with%20Eco-Pantry" class="connect-btn">
+    <i class="fas fa-envelope"></i> Email
+</a>
+            <a href="https://github.com/mohammedkamil-crypto" onclick="alert('GitHub: Project Source Code Available')" class="connect-btn">
+                <i class="fab fa-github"></i> GitHub
+            </a>
+        </div>
+        <p style="margin-top: 1rem; font-size: 0.9rem;">Turning Food Waste into Climate Action</p>
+    </footer>
+
+   <script src="eco.js">
+
+   </script>
+</body>
+</html>
