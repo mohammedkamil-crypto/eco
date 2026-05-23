@@ -18,7 +18,7 @@
             resetBtn: document.getElementById('reset-all-btn')
         };
 
-        const commonIngredients = ["chicken","rice","tomato","onion","garlic","egg","potato","carrot","beef","salmon","beans","spinach","cheese","lemon","avocado","tofu","quinoa","broccoli","lentils","mushroom"];
+        const commonIngredients = ["chicken","rice","tomato","onion","garlic","egg","potato","carrot","beef","salmon","beans","spinach","cheese","lemon","avocado","broccoli"];
 
         function renderSuggestions() {
             document.getElementById('suggestions').innerHTML = commonIngredients.map(ing => `
